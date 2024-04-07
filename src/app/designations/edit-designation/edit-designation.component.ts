@@ -19,12 +19,12 @@ export class EditDesignationComponent implements OnInit {
 
   ngOnInit(): void {
     const idString = this.route.snapshot.paramMap.get('id');
-  const id = idString ? +idString : null;
-  if (id !== null) {
-    this.getDesignation(id);
-  } else {
-    console.error('Designation ID is null.');
-  }
+    const id = idString ? +idString : null;
+    if (id !== null) {
+      this.getDesignation(id);
+    } else {
+      console.error('Designation ID is null.');
+    }
   }
 
   getDesignation(id: number | null): void {

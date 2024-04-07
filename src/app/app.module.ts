@@ -18,6 +18,8 @@ import { DesignationListComponent } from './designations/designation-list/design
 import { CreateDesignationComponent } from './designations/create-designation/create-designation.component';
 import { EditDesignationComponent } from './designations/edit-designation/edit-designation.component';
 import { DepartmentListComponent } from './departments/department-list/department-list.component';
+import { CreateDepartmentComponent } from './departments/create-department/create-department.component';
+import { EditDepartmentComponent } from './departments/edit-department/edit-department.component';
 
 
 @NgModule({
@@ -35,6 +37,8 @@ import { DepartmentListComponent } from './departments/department-list/departmen
     CreateDesignationComponent,
     EditDesignationComponent,
     DepartmentListComponent,
+    CreateDepartmentComponent,
+    EditDepartmentComponent,
     
   ],
   imports: [

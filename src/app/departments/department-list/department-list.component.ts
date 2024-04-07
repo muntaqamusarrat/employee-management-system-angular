@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DepartmentService } from 'src/app/service/department.service';
 
 @Component({
@@ -10,7 +11,15 @@ export class DepartmentListComponent implements OnInit {
 
   departments: any[] = [];
 
-  constructor(private departmentService: DepartmentService) { }
+  constructor(private router: Router, private departmentService: DepartmentService) { }
+
+  createDepartment(): void {
+    this.router.navigate(['/create-department']);
+  }
+
+  updateDepartment(id: number): void {
+    this.router.navigate(['/edit-department', id]);
+  }
 
   ngOnInit(): void {
     this.getDepartments();

@@ -26,4 +26,8 @@ export class AppComponent {
   goToDesignation(): void {
     this.router.navigate(['/designations']);
   }
+
+  goToDepartment(): void {
+    this.router.navigate(['/departments']);
+  }
 }

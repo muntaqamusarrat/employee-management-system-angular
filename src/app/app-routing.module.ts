@@ -9,6 +9,9 @@ import { CreateProjectComponent } from './projects/create-project/create-project
 import { DesignationListComponent } from './designations/designation-list/designation-list.component';
 import { CreateDesignationComponent } from './designations/create-designation/create-designation.component';
 import { EditDesignationComponent } from './designations/edit-designation/edit-designation.component';
+import { DepartmentListComponent } from './departments/department-list/department-list.component';
+import { CreateDepartmentComponent } from './departments/create-department/create-department.component';
+import { EditDepartmentComponent } from './departments/edit-department/edit-department.component';
 
 const routes: Routes = [
   { path: 'skills', component: SkillListComponent },
@@ -20,6 +23,9 @@ const routes: Routes = [
   { path: 'designations', component: DesignationListComponent },
   { path: 'create-designation', component: CreateDesignationComponent },
   { path: 'edit-designation/:id', component: EditDesignationComponent },
+  { path: 'departments', component: DepartmentListComponent },
+  { path: 'create-department', component: CreateDepartmentComponent },
+  { path: 'edit-department/:id', component: EditDepartmentComponent },
 ];
 
 @NgModule({
